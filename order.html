@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online shop Shopping</title>
+  <link rel="shortcut icon" href="image/change.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<style>
+  .cart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .main {
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  img.main-image {
+    width: 10pc;
+    border: 1px solid greenyellow;
+  }
+  h2.main-text {
+    text-align: center;
+    color: #549bd1;
+    font-weight: bold;
+    font-family: fangsong;
+    font-size: 71px;
+    align-items: center;
+}
+button.btn.btn-sm.btn-outline-secondary {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #3f8fca;
+    border: 1px solid #3f8fca;
+}
+button.btn.btn-sm.btn-outline-secondary:hover {
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #aecadf;
+    border: 1px solid #3f8fca;
+}
+h1.text-g {
+    text-align: center;
+    margin-bottom: 59px;
+    text-transform: uppercase;
+    color: #256ca7;
+    border: 3px dotted;
+}
+
+</style>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-g"><marquee scrollamount="16" behavior="alternate" direction="right">online shop Shopping</marquee></h1>
+    <div class="section">
+
+    <div class="main">
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0005.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $500</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 500,99)">Add
+          Item</button>
+      </div>
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0008.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $600</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 600,99)">Add
+          Item</button>
+      </div>
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0006.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $700</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 700,99)">Add
+          Item</button>
+      </div>
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0014.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $800</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 800,99)">Add
+          Item</button>
+      </div>
+    <div class="main">
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0015.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $900</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 900,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0023.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $1000</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1000,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0030.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $1100</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1100,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0021.jpg" alt="image">
+        <h3>New Order</h3>
+        <p>Price: $1200</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1200,99)">Add
+          Item</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-173978797510398599IMG20250216WA0028Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1300</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1300,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0029.jpg" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1400</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1400,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-1739787510849253399IMG20250216WA0010Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1500</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1500,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-1739787372753341458IMG20250216WA0004Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1600</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1600,99)">Add
+          Item</button>
+      </div>
+
+    </div>
+    <div class="main">
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-1739787648192991996IMG20250216WA0012Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1700</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1700,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/IMG-20250216-WA0030.jpg" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1800</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1800,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-1739787510849253399IMG20250216WA0010Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $1900</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 1900,99)">Add
+          Item</button>
+      </div>
+
+      <div class="item mt-3">
+        <img class="main-image" src="kaira-1.0.0/images/resize-17397874721923844159IMG20250216WA0009Photoroom.png" alt="">
+        <h3>New Order</h3>
+        <p>Price: $2000</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="showPopup('shoes to shop', 2000,99)">Add
+          Item</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+      <!-- Cart Section -->
+      <div class="cart mt-4">
+        <h2 class="main-text"><marquee scrollamount="16" behavior="alternate" direction="right">ITEM/ADD</marquee></h2>
+        <ul id="cart-list" class="list-group"></ul>
+      </div>
+    </div>
+  <!-- Modal (Popup) -->
+  <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addItemModalLabel">WELCOME BACK SIR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-body-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="confirmAddButton"> <a href="/checkout.html" target="_blank"
+              onclick="window.open"></a>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let cartItems = [];
+    let currentItem = null;
+
+    // Function to show the popup
+    function showPopup(itemName, price) {
+      currentItem = { name: itemName, price: price };
+
+      // Set the modal text
+      document.getElementById('modal-body-text').textContent = `Added to Cart`;
+
+      // Show the modal
+      const addItemModal = new bootstrap.Modal(document.getElementById('addItemModal'));
+      addItemModal.show();
+    }
+
+    // Function to add the item to the cart
+    function addToCart() {
+      if (currentItem) {
+        cartItems.push(currentItem);
+        updateCart();
+        currentItem = null;
+      }
+    }
+
+    // Function to update the cart UI
+
+    function updateCart() {
+      const cartList = document.getElementById('cart-list');
+      cartList.innerHTML = ''; // Clear the list
+
+      cartItems.forEach((item, index) => {
+        const li = document.createElement('list');
+        li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+        li.innerHTML = `
+          ${item.name} - $${item.price}
+          <button class="btn btn-danger btn-sm" onclick="deleteItem(${index})">Delete</button>
+          `;
+        cartList.appendChild(li);
+      });
+    }
+
+    // Function to delete an item from the cart
+    function deleteItem(index) {
+      cartItems.splice(index, 1);
+      updateCart();
+    }
+
+    // Attach the confirm add event to the button
+    document.getElementById('confirmAddButton').addEventListener('click', () => {
+      addToCart();
+
+      // Close the modal
+      const addItemModal = bootstrap.Modal.getInstance(document.getElementById('addItemModal'));
+      addItemModal.hide();
+    });
+
+  </script>
+  <script>
+    alert('Welcome Back.')
+  </script>
+</body>
+
+</html>

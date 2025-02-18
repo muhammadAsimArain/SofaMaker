@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            flex-direction: column;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .switch {
+            margin-top: 10px;
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Signup Form -->
+    <div class="container" id="signupForm">
+        <h2>Signup</h2>
+        <form onsubmit="saveData(event)">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="tel" id="phone" placeholder="Phone Number" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Signup</button>
+        </form>
+        <p class="switch" onclick="toggleForm('loginForm')">Already have an account? Login</p>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container" id="loginForm" style="display: none;">
+        <h2>Login</h2>
+        <form onsubmit="validateLogin(event)">
+            <input type="text" id="loginUsername" placeholder="Username" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p class="switch" onclick="toggleForm('signupForm')">Don't have an account? Signup</p>
+    </div>
+
+    <script>
+        function saveData(event) {
+            event.preventDefault();
+
+            // User input fetch karna
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+
+            // Object me data store karna
+            let user = {
+                username: username,
+                email: email,
+                phone: phone,
+                password: password
+            };
+
+            // LocalStorage me save karna
+            localStorage.setItem("userData", JSON.stringify(user));
+
+            alert("Account Created Successfully!");
+            toggleForm('loginForm'); // Login form dikhana
+        }
+
+        function validateLogin(event) {
+            event.preventDefault();
+
+            // User input fetch karna
+            let loginUsername = document.getElementById("loginUsername").value;
+            let loginPassword = document.getElementById("loginPassword").value;
+
+            // LocalStorage se data lena
+            let storedUser = JSON.parse(localStorage.getItem("userData"));
+
+            if (storedUser && loginUsername === storedUser.username && loginPassword === storedUser.password) {
+                alert("Login Successful!");
+                window.location.href = "/kaira-1.0.0/index.html"; // Redirect to another page
+            } else {
+                alert("Invalid Username or Password!");
+            }
+        }
+
+        function toggleForm(formId) {
+            document.getElementById("signupForm").style.display = formId === 'signupForm' ? 'block' : 'none';
+            document.getElementById("loginForm").style.display = formId === 'loginForm' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
